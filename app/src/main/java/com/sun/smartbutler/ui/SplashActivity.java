@@ -44,7 +44,7 @@ public class SplashActivity extends AppCompatActivity {
     //初始化
     private void initView() {
         //延时两秒
-        handler.sendEmptyMessageDelayed(StaticClass.HANDLER_TIME,1500);
+        handler.sendEmptyMessageDelayed(StaticClass.HANDLER_TIME,2000);
         tv_splash = (TextView) findViewById(R.id.tv_splash);
 
         //设置字体
