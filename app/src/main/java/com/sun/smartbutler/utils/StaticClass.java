@@ -11,10 +11,13 @@ package com.sun.smartbutler.utils;
 public class StaticClass {
 
     //闪屏页的延时
-    public static final int HANDLER_TIME=101;
+    public static final int HANDLER_TIME = 101;
     //是否是第一次运行 文件名
-    public static final String SPLASH_IS_FIRST="toFirst";
+    public static final String SPLASH_IS_FIRST = "toFirst";
 
     //Bugly key
-    public static final String BUG_APP_ID="22b31aebbe";
+    public static final String BUG_APP_ID = "22b31aebbe";
+
+    //bmob key
+    public static final String BMOB_APP_ID = "cb0fc5fd283056b4d08834e6eb20e03a";
 }

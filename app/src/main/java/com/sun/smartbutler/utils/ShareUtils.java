@@ -27,18 +27,18 @@ public class ShareUtils {
         config.edit().putString(key,values).apply();
     }
 
-    public static void getString(Context mContext,String key,String defValues){
+    public static String getString(Context mContext,String key,String defValues){
         SharedPreferences config = mContext.getSharedPreferences(NAME, Context.MODE_PRIVATE);
-        config.getString(key,defValues);
+        return config.getString(key,defValues);
     }
     public static void putInt(Context mContext,String key,int values){
         SharedPreferences config = mContext.getSharedPreferences(NAME, Context.MODE_PRIVATE);
         config.edit().putInt(key,values).apply();
     }
 
-    public static void getInt(Context mContext,String key,int defValues){
+    public static int getInt(Context mContext,String key,int defValues){
         SharedPreferences config = mContext.getSharedPreferences(NAME, Context.MODE_PRIVATE);
-        config.getInt(key,defValues);
+        return config.getInt(key,defValues);
     }
     public static void putBoolean(Context mContext,String key,boolean values){
         SharedPreferences config = mContext.getSharedPreferences(NAME, Context.MODE_PRIVATE);
@@ -56,7 +56,7 @@ public class ShareUtils {
         config.edit().remove(key).apply();
     }
     //删除全部
-    private static void deleteAll(Context mContext){
+    public static void deleteAll(Context mContext){
         SharedPreferences config=mContext.getSharedPreferences(NAME,Context.MODE_PRIVATE);
         config.edit().clear().apply();
     }
