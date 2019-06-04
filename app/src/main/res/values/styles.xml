@@ -14,7 +14,36 @@
         <item name="windowNoTitle">true</item>
         <item name="android:windowActionBarOverlay">@null</item>
         <item name="android:windowFullscreen">true</item>
+    </style>
 
+    <!--自定义dialog动画-->
+    <style name="AppTheme.anim_style">
+        <item name="android:windowEnterAnimation">@anim/anim_in</item>
+        <item name="android:windowExitAnimation">@anim/anim_out</item>
+    </style>
+
+    <!--<style name="AppTheme.CustomDialog">-->
+        <!--<item name="android:windowNoTitle">true</item>-->
+        <!--<item name="android:windowBackground">@android:color/transparent</item>-->
+    <!--</style>-->
+
+    <!--parent="android:style/Theme.Dialog"-->
+    <!--<style name="Theme_MyDialog">-->
+        <!--&lt;!&ndash;背景颜色和透明程度&ndash;&gt;-->
+        <!--<item name="android:windowBackground">@android:color/transparent</item>-->
+        <!--&lt;!&ndash;是否去除标题&ndash;&gt;-->
+        <!--<item name="android:windowNoTitle">true</item>-->
+        <!--&lt;!&ndash;是否去除边框&ndash;&gt;-->
+        <!--<item name="android:windowFrame">@null</item>-->
+        <!--&lt;!&ndash;是否浮现在activity之上&ndash;&gt;-->
+        <!--<item name="android:windowIsFloating">true</item>-->
+        <!--&lt;!&ndash;是否模糊&ndash;&gt;-->
+        <!--<item name="android:backgroundDimEnabled">false</item>-->
+    <!--</style>-->
+
+    <style name="Theme_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
     </style>
 
 </resources>
