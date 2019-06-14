@@ -55,8 +55,8 @@
         <!-- 注册页面 -->
         <activity android:name=".ui.RegisterActivity" />
 
-        <!--忘记密码-->
-        <activity android:name=".ui.ForgetPasswordActivity"/>
+        <!-- 忘记密码 -->
+        <activity android:name=".ui.ForgetPasswordActivity" />
 
         <provider
             android:name="android.support.v4.content.FileProvider"
@@ -67,6 +67,10 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_paths" />
         </provider>
+
+        <activity android:name=".ui.CourierActivity" />
+        <activity android:name=".ui.PhoneActivity" />
+        <activity android:name=".ui.WebViewActivity"></activity>
     </application>
 
 </manifest>

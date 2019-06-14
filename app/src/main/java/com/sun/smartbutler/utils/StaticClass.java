@@ -20,4 +20,13 @@ public class StaticClass {
 
     //bmob key
     public static final String BMOB_APP_ID = "cb0fc5fd283056b4d08834e6eb20e03a";
+
+    //快递key
+    public static final String COURIER_KEY = "771922b8a5882130716c0c75744abd00";
+    //手机号码归属地
+    public static final String PHONE_KEY = "2b6d005a27cd1a603e4fdfa7060ac6c8";
+
+    //微信精选key
+    public static final String WECHAT_KEY="b4a61ef7d689b1ab710987caf0ebd729";
+
 }

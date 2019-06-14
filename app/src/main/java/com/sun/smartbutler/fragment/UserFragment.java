@@ -28,7 +28,9 @@ import android.widget.Toast;
 
 import com.sun.smartbutler.R;
 import com.sun.smartbutler.entity.MyUser;
+import com.sun.smartbutler.ui.CourierActivity;
 import com.sun.smartbutler.ui.LoginActivity;
+import com.sun.smartbutler.ui.PhoneActivity;
 import com.sun.smartbutler.utils.LogUtil;
 import com.sun.smartbutler.utils.ShareUtils;
 import com.sun.smartbutler.utils.UtilTools;
@@ -74,6 +76,11 @@ public class UserFragment extends Fragment implements View.OnClickListener {
     private Button btn_picture;
     private Button btn_cancel;
 
+    //快递查询
+    private TextView tv_courier;
+    //归属地查询
+    private TextView tv_phone;
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -95,6 +102,12 @@ public class UserFragment extends Fragment implements View.OnClickListener {
         et_sex = (EditText) view.findViewById(R.id.et_sex);
         et_age = (EditText) view.findViewById(R.id.et_age);
         et_desc = (EditText) view.findViewById(R.id.et_desc);
+
+        //快递 号码归属地
+        tv_courier = (TextView) view.findViewById(R.id.tv_courier);
+        tv_courier.setOnClickListener(this);
+        tv_phone = (TextView) view.findViewById(R.id.tv_phone);
+        tv_phone.setOnClickListener(this);
 
         btn_update_ok = (Button) view.findViewById(R.id.btn_update_ok);
         btn_update_ok.setOnClickListener(this);
@@ -214,6 +227,12 @@ public class UserFragment extends Fragment implements View.OnClickListener {
 //                } else {
 //                   // toPicture();
 //                }
+                break;
+            case R.id.tv_courier:
+                startActivity(new Intent(getActivity(),CourierActivity.class));
+                break;
+            case R.id.tv_phone:
+                startActivity(new Intent(getActivity(),PhoneActivity.class));
                 break;
         }
     }
