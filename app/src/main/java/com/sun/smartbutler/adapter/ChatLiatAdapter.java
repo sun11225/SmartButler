@@ -54,6 +54,7 @@ public class ChatLiatAdapter extends BaseAdapter {
         View view = null;
         ViewHolderLeft viewHolderLeft = null;
         ViewHolderRight viewHolderRight = null;
+
         int type = getItemViewType(position);
 
         if (convertView == null) {

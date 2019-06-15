@@ -29,4 +29,11 @@ public class StaticClass {
     //微信精选key
     public static final String WECHAT_KEY="b4a61ef7d689b1ab710987caf0ebd729";
 
+    //天行数据key
+    public static final String TIANXING_KEY="522dd11fd9d2ee0b04a7464bb572ab63";
+
+    //语音key
+    public static final String VOIVE_KEY="5d048b32";
+
+
 }
