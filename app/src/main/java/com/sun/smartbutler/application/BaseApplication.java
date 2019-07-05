@@ -1,6 +1,7 @@
 package com.sun.smartbutler.application;
 
 import android.app.Application;
+import android.content.Context;
 
 import com.iflytek.cloud.SpeechConstant;
 import com.iflytek.cloud.SpeechUtility;
@@ -27,8 +28,12 @@ public class BaseApplication extends Application {
         CrashReport.initCrashReport(getApplicationContext(), StaticClass.BUG_APP_ID, false);
         //初始化bmob
         Bmob.initialize(this,StaticClass.BMOB_APP_ID);
-        //初始化语音播报
-        SpeechUtility.createUtility(getApplicationContext(), SpeechConstant.APPID +"="+StaticClass.VOIVE_KEY);
+        // 将“12345678”替换成您申请的APPID，申请地址：http://www.xfyun.cn
+        // 请勿在“=”与appid之间添加任何空字符或者转义符
+        SpeechUtility.createUtility(getApplicationContext(), SpeechConstant.APPID + "=" +StaticClass.VOIVE_KEY);
+        //在使用SDK各组件之前初始化context信息，传入ApplicationContext
+        //注意该方法要再setContentView方法之前实现
+//        SDKInitializer.initialize(getApplicationContext());
 
     }
 }

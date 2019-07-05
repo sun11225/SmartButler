@@ -74,6 +74,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mViewPager = (ViewPager) findViewById(R.id.mViewPager);
         mFloatingActionButton = (FloatingActionButton) findViewById(R.id.fab_setting);
         mFloatingActionButton.setOnClickListener(this);
+        mFloatingActionButton.setVisibility(View.GONE);
 
         //预加载viewPager
         mViewPager.setOffscreenPageLimit(mFragment.size());

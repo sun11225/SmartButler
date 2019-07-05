@@ -34,6 +34,8 @@ public class StaticClass {
 
     //语音key
     public static final String VOIVE_KEY="5d048b32";
+    //短信action
+    public static final String SMS_INTENT="android.provider.Telephony.SMS_RECEIVED";
 
 
 }
